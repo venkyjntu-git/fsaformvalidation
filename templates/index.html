@@ -1,0 +1,24 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Welcome</title>
+    </head>
+    <body>
+        Welcome, world 
+    </body>
+</html> -->
+
+{% extends "layout.html" %} 
+{% block body %}
+<h1>Registration </h1>
+<form action="/register" method="post">
+<label>Name:</label>
+<input autocomplete="off" autofocus name="name" placeholder="Name" type="text">
+<br><br>
+<label>RollNumber:</label>
+<input autocomplete="off" autofocus name="rollno" placeholder="RollNumber" type="text">
+<br><br>
+<button type="submit">Register</button>
+</form>
+
+{% endblock %}
